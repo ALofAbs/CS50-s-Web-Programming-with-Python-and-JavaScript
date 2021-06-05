@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Search Image</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+        nav {
+            text-align: end;
+        }
+
+        a {
+            padding-left: 10px;
+            color: #222;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #f8f8f8;
+            border-radius: 24px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto;
+            height: 200px;
+            width: 500px;
+            align-items: center;
+        }
+
+        .search_label {
+            font-family: 'Noto Serif', serif;
+            font-size: 70px;
+        }
+
+        .search_bar {
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            height: 30px;
+            width: 420px;
+        }
+
+        .search_submit {
+            border: 1px solid #ffffff;
+            width: fit-content;
+            height: 35px;
+            color: #222;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Google Search</a>
+    </nav>
+
+    <section class="main">
+
+        <form action="http://google.com/search">
+            <label class="search_label" for="normal_search">
+                <span style="color: #4285F4">I</span><span style="color: #DB4437">m</span><span
+                    style="color: #F4B400">a</span><span style="color: #4285F4">g</span><span
+                    style="color: #0F9D58">e</span><span style="color: #DB4437"></span> <span
+                    style="color: #4285F4">S</span><span style="color: #DB4437">e</span><span
+                    style="color: #F4B400">a</span><span style="color: #4285F4">r</span><span
+                    style="color: #0F9D58">c</span><span style="color: #DB4437">h</span><span
+                    style="color: #4285F4">!</span>
+            </label>
+            <input id="normal_search" class="search_bar" type="text" name="q" required>
+            <input name="tbm" value="isch" type="hidden">
+            <input class="search_submit" type="submit" value="Image Search">
+        </form>
+
+    </section>
+
+</body>
+
+</html>

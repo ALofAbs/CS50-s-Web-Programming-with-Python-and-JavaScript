@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Search</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+        nav {
+            text-align: end;
+        }
+
+        a {
+            padding-left: 10px;
+            color: #222;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: #f8f8f8;
+            border-radius: 24px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: flex-start;
+            height: 300px;
+        }
+
+        .main>p {
+            font-family: 'Noto Serif', serif;
+            font-size: 22px;
+            padding-left: 40px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 240px;
+            width: 900px;
+            align-items: flex-start;
+            border-top: 1px solid rgb(247, 163, 163);
+            border-bottom: 1px solid rgb(247, 163, 163);
+            padding: 20px 40px 60px;
+            color: #222;
+        }
+
+        form>div {
+            display: flex;
+            align-items: center;
+        }
+
+        form>div>p {
+            width: 160px;
+        }
+
+        .search_label {
+            font-size: 18px;
+            margin: 20px 0px;
+        }
+
+        .search_bar {
+            border: 1px solid #b2b4b6;
+            height: 25px;
+            width: 420px;
+        }
+
+        .search_submit {
+            position: absolute;
+            margin: 320px 468px;
+            border: 1px solid #ffffff;
+            width: fit-content;
+            height: 25px;
+            color: white;
+            background-color: #4285F4;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Google Search</a>
+    </nav>
+
+    <section class="main">
+
+        <p><span style="color: #4285F4">A</span><span style="color: #DB4437">d</span><span
+                style="color: #F4B400">v</span><span style="color: #4285F4">a</span><span
+                style="color: #0F9D58">n</span><span style="color: #DB4437">c</span><span
+                style="color: #4285F4">e</span><span style="color: #DB4437">d</span> <span
+                style="color: #F4B400">S</span><span style="color: #4285F4">e</span><span
+                style="color: #0F9D58">a</span><span style="color: #DB4437">r</span><span
+                style="color: #4285F4">c</span><span style="color: #F4B400">h</span></p>
+        <form action="http://google.com/search">
+            <label class="search_label">Find pages with...</label>
+            <div>
+                <p>all these words:</p>
+                <input id="normal_search" class="search_bar" type="text" name="as_q">
+            </div>
+            <div>
+                <p>this exact word or phrase:</p>
+                <input id="normal_search" class="search_bar" type="text" name="as_epq">
+            </div>
+            <div>
+                <p>any of these words:</p>
+                <input id="normal_search" class="search_bar" type="text" name="as_oq">
+            </div>
+            <div>
+                <p>none of these words:</p>
+                <input id="normal_search" class="search_bar" type="text" name="as_eq">
+            </div>
+            <input class="search_submit" type="submit" value="Advanced Search">
+        </form>
+
+    </section>
+
+</body>
+
+</html>
